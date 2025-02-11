@@ -1,4 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 :root {
-  --main-color: red;
-  --text-color: black; 
+  --main-color: #0b9586;
+  --second-color: #ffbb1c;
+  --text-color: #475467;
+  --black-color: #101828;
+  --white-color: #fff;
+}
+
+body {
+  font-family: "Inter", serif;
 }
