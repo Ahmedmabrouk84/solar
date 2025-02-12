@@ -8,10 +8,90 @@
   --main-color: #0b9586;
   --second-color: #ffbb1c;
   --text-color: #475467;
-  --black-color: #101828;
+  --heade-title-color: #101828;
   --white-color: #fff;
+  --btn-text-color: #2a3334;
 }
-
+ul li {
+  list-style: none;
+}
 body {
+  margin: 0;
   font-family: "Inter", serif;
+}
+.container {
+  width: 82.5rem;
+  margin: auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.btn {
+  font-size: 0.875rem;
+  padding: 0.75rem 2.125rem;
+  border-radius: 6.8125rem;
+  margin: 1.25rem;
+  border: solid 0.125rem transparent;
+  cursor: pointer;
+}
+.w-100 {
+  width: 100%;
+}
+.bg-danger {
+  background-color: red;
+}
+.bg-warning {
+  background-color: yellow;
+}
+/* ======================== */
+.nav-spacing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 555;
+  width: 100%;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0.1875rem 0.625rem;
+}
+/* ========================= */
+h1 {
+  font-size: 3.25rem;
+  font-weight: 600;
+}
+header {
+  margin-top: 0;
+  background-image: url(assets/imgs/solar-panels-meadow1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.solar-content {
+  min-height: 100vh;
+  align-content: center;
+  color: var(--white-color);
+}
+.solar-content p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 70%;
+}
+.solar-content .btn-call {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.solar-content .btn-call-back {
+  background-color: var(--second-color);
+  color: var(--btn-text-color);
 }
