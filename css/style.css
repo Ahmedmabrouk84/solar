@@ -340,14 +340,14 @@ header {
 
 footer {
   background-color: var(--bg-footer);
-  padding: .625rem;
+  padding: 2.5rem;
 }
 footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: solid .0625rem  var(--text-color);
-  padding: .625rem .9375rem;
+  padding: 1.25rem .9375rem;
 }
 footer .footer-content ul li {
   color: var(--white-color);
@@ -372,4 +372,13 @@ footer .footer-content .form-group button {
   position: absolute;
   right: -3.125rem;
   top: -1.25rem;
+}
+footer .footer-li li{
+  padding: .5rem .625rem;
+  color: var(--text-color);
+}
+.footer-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
