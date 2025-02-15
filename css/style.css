@@ -1,0 +1,344 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0b9586;
+  --second-color: #ffbb1c;
+  --text-color: #475467;
+  --heade-title-color: #101828;
+  --white-color: #fff;
+  --btn-text-color: #2a3334;
+  --product-color: #84bd3a;
+  --testemonil-color: #00000091;
+  --border-color: #3cab90;
+  --Enargy-bg: #ffbb1c0d;
+}
+
+ul li {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Inter", serif;
+  margin: 0;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.container {
+  max-width: 82.5rem;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.btn {
+  font-size: 0.875rem;
+  padding: 0.75rem 2.125rem;
+  border-radius: 6.8125rem;
+  margin: 1.25rem;
+  border: solid 0.125rem transparent;
+  cursor: pointer;
+}
+.w-100 {
+  width: 100%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
+}
+.bg-danger {
+  background-color: red;
+}
+.bg-warning {
+  background-color: yellow;
+}
+.bg-green {
+  background-color: chocolate;
+}
+.h-100 {
+  height: 100%;
+}
+.my-5 {
+  margin-block: 3rem;
+}
+.m-0 {
+  margin: 0;
+}
+.my-3 {
+  margin-block: 2.25rem;
+}
+a {
+  text-decoration: none;
+  color: var(--product-color);
+}
+/* ======================== */
+
+.nav-spacing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 555;
+  width: 100%;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0.1875rem 0.625rem;
+}
+
+/* ========================= */
+h1 {
+  font-size: 3.25rem;
+  font-weight: 600;
+  /* width: 60%; */
+}
+h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  color: var(--heade-title-color);
+}
+header {
+  position: relative;
+  background-image: url(../assets/imgs/solar-panels-meadow1.png);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
+.solar-content {
+  min-height: 100vh;
+  width: 100%;
+  align-content: center;
+  color: var(--white-color);
+}
+.solar-content p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 70%;
+}
+.solar-content .btn-call {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.btn-call-back {
+  background-color: var(--second-color);
+  color: var(--btn-text-color);
+}
+.solar-content .solar-desc {
+  color: var(--white-color);
+}
+/*============================ */
+.solar-about .desc {
+  padding: 0.625rem 0.625rem;
+  line-height: 1.5;
+}
+.solar-about ul li {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+}
+.solar-about ul li span {
+  color: var(--product-color);
+  font-size: 1rem;
+}
+.solar-about .about-img {
+  margin-left: 0.625rem;
+  position: relative;
+}
+/* .solar-about .about-img .overlay-img {
+  background-color: var(--second-color);
+  width: 250px;
+  height: 180px;
+  border-radius: 20px;
+}
+.solar-about .about-img .overlay-img {
+  position: absolute;
+  content: "";
+  left: -10%;
+  top: 60%;
+  padding: 10px 8px;
+} */
+
+/* ========================= */
+
+.power {
+  padding: 48px 30px;
+  background-image: url(../assets/imgs/power.png);
+  background-position: center;
+  background-size: cover;
+  & h2 {
+    color: var(--white-color);
+  }
+}
+.power .power-content p {
+  font-size: 20px;
+  color: var(--white-color);
+  width: 60%;
+}
+/* =========== */
+
+.solar-kits .solar-kits-content {
+  text-align: center;
+}
+.solar-kits .solar-kits-content p {
+  width: 90%;
+  text-align: center;
+}
+.solar-kits .solar-kits-product figcaption {
+  padding: 0.625rem 0.9375rem;
+  line-height: 1.6;
+}
+.solar-kits .solar-kits-product .product {
+  padding: 0 0.9375rem;
+}
+/* ========= */
+
+.testemonil {
+  background-image: url(../assets/imgs/testemonil.png);
+  height: 31.5625rem;
+}
+.testemonil .testemonil-content h2,
+.testemonil .testemonil-content p {
+  color: var(--white-color);
+  line-height: 1.7;
+}
+.testemonil .testemonil-content {
+  text-align: center;
+  padding: 2.1875rem 2.5rem;
+  width: 53.625rem;
+  margin: auto;
+  border-radius: 0.9375rem;
+  background-color: var(--testemonil-color);
+}
+/* ========= */
+
+.Energy {
+  background-color: var(--Enargy-bg);
+}
+.Energy .energy-icon {
+  background-color: var(--border-color);
+  padding: 12px;
+  border-radius: 12px;
+  color: var(--white-color);
+}
+.Energy .energy-icon i {
+  font-size: 20px;
+}
+.Energy .Energy-product-container {
+  padding: 24px;
+}
+.Energy .Energy-product-container .solar-product {
+  padding: 2px 15px;
+}
+.Energy .Energy-product-container .product {
+  border: solid 0.0625rem var(--border-color);
+  padding: 24px;
+  border-radius: 0.75rem;
+  margin-block: 10px;
+}
+.Energy .Energy-Innovators p {
+  line-height: 1.5;
+}
+/* =========== */
+
+.our-values {
+  padding: 0.625rem 1.875rem;
+}
+.our-values .value-content {
+  text-align: center;
+  margin: 0;
+}
+.our-values .value-content h2 {
+  margin: 10px auto;
+}
+.our-values .container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-values .value__element {
+  margin: 0 10px;
+}
+.our-values .value__element i {
+  font-size: 2.1875rem;
+  display: block;
+  color: var(--border-color);
+}
+
+.our-values .value__element .card {
+  padding: 32px;
+  border: solid 1px var(--border-color);
+  border-radius: 12px;
+}
+/* =========== */
+
+.about-woc .about-woc-content h2 {
+  font-weight: 700;
+}
+.about-woc .about-woc-content p {
+  font-size: 1.125rem;
+}
+.about-woc .woc-cursol {
+  background-color: var(--Enargy-bg);
+  padding: 20px;
+}
+.about-woc .woc-cursol span {
+  color: var(--border-color);
+}
+.about-woc .woc-cursol p {
+  width: 75%;
+  font-size: 24px;
+}
+.woc-indector h4{
+  margin: 8px 0;
+}
+.woc-indector {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.parant-indector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parant-indector .arrows span{
+
+  margin-left: .9375rem;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  color: var(--btn-text-color);
+border: solid .0625rem var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+cursor: pointer;
+  border-radius: 1.5rem;
+}
+.parant-indector .arrows span i{
+  font-size: 1.25rem;
+}
