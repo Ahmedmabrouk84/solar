@@ -15,6 +15,7 @@
   --testemonil-color: #00000091;
   --border-color: #3cab90;
   --Enargy-bg: #ffbb1c0d;
+  --bg-footer: #283646;
 }
 
 ul li {
@@ -75,11 +76,12 @@ p {
 .my-5 {
   margin-block: 3rem;
 }
-.m-0 {
-  margin: 0;
-}
+
 .my-3 {
   margin-block: 2.25rem;
+}
+.m-0 {
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -167,24 +169,11 @@ header {
   margin-left: 0.625rem;
   position: relative;
 }
-/* .solar-about .about-img .overlay-img {
-  background-color: var(--second-color);
-  width: 250px;
-  height: 180px;
-  border-radius: 20px;
-}
-.solar-about .about-img .overlay-img {
-  position: absolute;
-  content: "";
-  left: -10%;
-  top: 60%;
-  padding: 10px 8px;
-} */
 
 /* ========================= */
 
 .power {
-  padding: 48px 30px;
+  padding: 3rem 1.875rem;
   background-image: url(../assets/imgs/power.png);
   background-position: center;
   background-size: cover;
@@ -193,7 +182,7 @@ header {
   }
 }
 .power .power-content p {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--white-color);
   width: 60%;
 }
@@ -239,24 +228,24 @@ header {
 }
 .Energy .energy-icon {
   background-color: var(--border-color);
-  padding: 12px;
-  border-radius: 12px;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
   color: var(--white-color);
 }
 .Energy .energy-icon i {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .Energy .Energy-product-container {
-  padding: 24px;
+  padding: 1.5rem;
 }
 .Energy .Energy-product-container .solar-product {
-  padding: 2px 15px;
+  padding: 0.125rem 0.9375rem;
 }
 .Energy .Energy-product-container .product {
   border: solid 0.0625rem var(--border-color);
-  padding: 24px;
+  padding: 1.5rem;
   border-radius: 0.75rem;
-  margin-block: 10px;
+  margin-block: 0.625rem;
 }
 .Energy .Energy-Innovators p {
   line-height: 1.5;
@@ -271,7 +260,7 @@ header {
   margin: 0;
 }
 .our-values .value-content h2 {
-  margin: 10px auto;
+  margin: 0.625rem auto;
 }
 .our-values .container-cards {
   display: flex;
@@ -279,7 +268,7 @@ header {
   align-items: center;
 }
 .our-values .value__element {
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 .our-values .value__element i {
   font-size: 2.1875rem;
@@ -288,9 +277,9 @@ header {
 }
 
 .our-values .value__element .card {
-  padding: 32px;
-  border: solid 1px var(--border-color);
-  border-radius: 12px;
+  padding: 2rem;
+  border: solid 0.0625rem var(--border-color);
+  border-radius: 0.75rem;
 }
 /* =========== */
 
@@ -300,19 +289,26 @@ header {
 .about-woc .about-woc-content p {
   font-size: 1.125rem;
 }
+.about-woc-content {
+  padding: 0.8125rem;
+}
+.about-woc-content span i {
+  font-size: 3rem;
+  color: var(--border-color);
+}
 .about-woc .woc-cursol {
   background-color: var(--Enargy-bg);
-  padding: 20px;
+  padding: 1.25rem;
 }
 .about-woc .woc-cursol span {
   color: var(--border-color);
 }
 .about-woc .woc-cursol p {
   width: 75%;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
-.woc-indector h4{
-  margin: 8px 0;
+.woc-indector h4 {
+  margin: 0.5rem 0;
 }
 .woc-indector {
   display: flex;
@@ -325,20 +321,55 @@ header {
   align-items: center;
 }
 
-.parant-indector .arrows span{
-
-  margin-left: .9375rem;
+.parant-indector .arrows span {
+  margin-left: 0.9375rem;
   width: 3rem;
   height: 3rem;
   display: block;
   color: var(--btn-text-color);
-border: solid .0625rem var(--border-color);
+  border: solid 0.0625rem var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
-cursor: pointer;
+  cursor: pointer;
   border-radius: 1.5rem;
 }
-.parant-indector .arrows span i{
+.parant-indector .arrows span i {
   font-size: 1.25rem;
+}
+
+footer {
+  background-color: var(--bg-footer);
+  padding: .625rem;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid .0625rem  var(--text-color);
+  padding: .625rem .9375rem;
+}
+footer .footer-content ul li {
+  color: var(--white-color);
+  padding: 0 10px;
+}
+.btn-Subscribe {
+  background-color: var(--second-color);
+  color: var(--white-color);
+}
+footer .footer-content .form-group input {
+  border-radius: 2.375rem;
+  border: solid 0.0625rem #b3bdc7;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--text-color);
+}
+footer .footer-content .form-group {
+  position: relative;
+  width: 40%;
+}
+footer .footer-content .form-group button {
+  position: absolute;
+  right: -3.125rem;
+  top: -1.25rem;
 }
